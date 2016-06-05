@@ -48,15 +48,7 @@
         singlePageCounter: '<div class="cbp-popup-singlePage-counter">{{current}} of {{total}}</div>',
         singlePageCallback: function(url, element) {
             // to update singlePage content use the following method: this.updateSinglePage(yourContent)
-        },
-
-        // singlePageInline
-        singlePageInlineDelegate: '.cbp-singlePageInline',
-        singlePageInlinePosition: 'below',
-        singlePageInlineInFocus: true,
-        singlePageInlineCallback: function(url, element) {
-            // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
-            var t = this;
+                 var t = this;
 
             $.ajax({
                     url: url,
@@ -72,6 +64,15 @@
                 .fail(function() {
                     t.updateSinglePageInline("Error! Please refresh the page!");
                 });
+        },
+
+        // singlePageInline
+        singlePageInlineDelegate: '.cbp-singlePageInline',
+        singlePageInlinePosition: 'below',
+        singlePageInlineInFocus: true,
+        singlePageInlineCallback: function(url, element) {
+            // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
+       
         }
     });
 
