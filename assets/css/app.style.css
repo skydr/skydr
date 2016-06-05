@@ -352,7 +352,7 @@ a:hover {
 
 .homeapp-header.one-page-header .navbar-nav > li > a:hover {
 	color: black;
-    text-decoration: line-through;
+    text-decoration: underline;
 }
 
 .homeapp-header.one-page-header .navbar-nav > .active > a,
@@ -375,6 +375,7 @@ a:hover {
 .homeapp-header.one-page-header .navbar-nav > li > a.btn-u.active {
 	background: #545454;
 	color: #FFE100;
+    text-decoration: none;
 }
 
 .homeapp-header.one-page-header.top-nav-collapse .navbar-toggle:hover .icon-bar {
