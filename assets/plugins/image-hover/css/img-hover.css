@@ -77,7 +77,7 @@ figure h4 {
   font-weight: 200;
   line-height: 24px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-bottom;
     line-height: 16px;
 }
 #effect-2 figure img {
