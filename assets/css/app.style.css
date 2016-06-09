@@ -37,8 +37,8 @@ a:hover {
   background: #4fd2c2;
 }
 ::selection {
-  color: #fff;
-  background: #AD8000;
+  color: #FFE100;
+  background: black;
 }
 
 .btn-u-upper {

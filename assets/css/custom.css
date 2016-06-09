@@ -2083,3 +2083,9 @@ i.icon-border-v3.g-icon-hover-1 span {
 	[skydr custom]
 ----------------------------------------------------  */
 li .img-c {max-height: 72px !important;}
+
+a.conta {display: block;}
+a.conta:hover {background: #212121; text-decoration: none; transition: all 0.5s ease-in-out;}
+.conta:hover .hconta {color: #FFE100;}
+.conta:hover .iconta {color: #FFE100;}
+.conta:hover .sconta {color: #FFE100 !important;}
