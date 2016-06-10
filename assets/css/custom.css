@@ -2084,7 +2084,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 ----------------------------------------------------  */
 li .img-c {max-height: 72px !important;}
 
-a.conta {display: block;}
+a.conta {display: block; padding: 10px 0;}
 a.conta:hover {background: #212121; text-decoration: none; transition: all 0.5s ease-in-out;}
 .conta:hover .hconta {color: #FFE100;}
 .conta:hover .iconta {color: #FFE100;}
