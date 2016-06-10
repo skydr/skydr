@@ -16,8 +16,9 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.png">
-
-
+    <link rel="stylesheet" href="assets/plugins/fakeloader/fakeLoader.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="assets/plugins/fakeloader/fakeLoader.min.js"></script>
 
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -30,9 +31,9 @@
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/plugins/animate.css">
+    
     <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/pace/pace-flash.css">
     <link rel="stylesheet" href="assets/plugins/owl-carousel2/assets/owl.carousel.css">
     <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
     <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
@@ -68,6 +69,7 @@
 </head>
 
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
+    <div id="fakeLoader"></div>
     <!-- Header -->
     <nav class="one-page-header navbar navbar-default navbar-fixed-animate homeapp-header" data-role="navigation">
         <div class="container">
@@ -860,7 +862,19 @@
         </div>
         <!-- End Copyright and Subscribe -->
     </section>
+<script type="text/javascript">
 
+
+    $("#fakeLoader").fakeLoader({
+    
+            timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+            zIndex:999, // Default zIndex
+            spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+            bgColor:"#2ecc71", //Hex, RGB or RGBA colors
+     
+            
+    });
+     </script>
     <!-- JS Global Compulsory -->
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
@@ -869,7 +883,7 @@
     <!-- JS Implementing Plugins -->
     <script src="assets/plugins/smoothScroll.js"></script>
     <script src="assets/plugins/jquery.easing.min.js"></script>
-    <script src="assets/plugins/pace/pace.min.js"></script>
+
     <script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
     <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
     <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
@@ -897,10 +911,8 @@
     <script type="text/javascript" src="assets/plugins/image-hover/js/touch.js"></script>
     <script type="text/javascript" src="assets/plugins/image-hover/js/modernizr.js"></script>
 
-
     <!-- JS Page Level-->
     <script src="assets/js/one.app.js"></script>
-    <script src="assets/js/plugins/pace-loader.js"></script>
     <script src="assets/js/plugins/owl-carousel2.js"></script>
     <script src="assets/js/plugins/circles-master.js"></script>
     <script src="assets/js/plugins/promo.js"></script>
