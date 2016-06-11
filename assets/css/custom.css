@@ -894,7 +894,7 @@ i.icon-border-v3.g-icon-hover-1 span {
 /* How We Work BEGIN */
 
 .v-tab-content {
-    background: #413c42 url(http://htmlstream.com/preview/unify-v1.9.1/One-Pages/Architecture/assets/img-temp/projects/img1.jpg) no-repeat 50% 0 / cover;
+    background: #191919;
     position: relative;
     color: #89848a;
     padding: 80px 0 50px;
@@ -907,7 +907,7 @@ i.icon-border-v3.g-icon-hover-1 span {
     height: 100%;
     content: " ";
     position: absolute;
-    background: rgba(25, 25, 25, 0.95);
+    background: rgba(25, 25, 25, 0);
 }
 
 .v-tab-content .container {
@@ -2038,16 +2038,20 @@ i.icon-border-v3.g-icon-hover-1 span {
     padding-bottom: 15px;
     background-color: #FFD324;
     transition: all .2s ease;
+     margin-top: 20px;
 }
 
 .social-block-v1__list:nth-child(2n+1) .social-block-v1__list-btn {
     background-color: #FFC800;
+    margin-top: 20px;
 }
 
 .social-block-v1__list-btn:hover,
 .social-block-v1__list:nth-child(2n+1) .social-block-v1__list-btn:hover {
     color: #fff;
     background: #F0B800;
+    margin-top: 0;
+    padding: 24px 0;
 }
 
 

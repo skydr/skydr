@@ -321,8 +321,8 @@ a:hover {
 	height: auto;
 }
 .navbar-brand > img {
-  width: 130px;
-  opacity: .8;
+  width: 40px;
+  opacity: 1;
 }
 @media (min-width: 992px) {
 	.homeapp-header.one-page-header .navbar-brand {

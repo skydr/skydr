@@ -591,6 +591,28 @@ h3.heading-xs {
 	transition: all 0.3s ease-in-out;
 }
 
+.btn-u-cl {
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 400;
+	padding: 6px 13px;
+	position: relative;
+	background: black;
+	white-space: nowrap;
+	display: inline-block;
+	text-decoration: none;
+    width: 100%;
+}
+
+.btn-u-cl:hover {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+    background: #3a3a3a;
+}
+
 .btn-u.btn-block {
 	text-align: center;
 }
