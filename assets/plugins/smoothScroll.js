@@ -124,7 +124,7 @@ function init() {
                 }, 500); // act rarely to stay fast
             }
         };
-        html.style.height = 'auto';
+        html.style.height = '100%';
         setTimeout(refresh, 10);
 
         // clearfix
