@@ -790,12 +790,12 @@ i.icon-border-v3.g-icon-hover-1 span {
 .g-heading-v7 h2,
 .g-heading-v7 .h2 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 55px;
     font-weight: 600;
     position: relative;
     padding-bottom: 40px;
     margin-bottom: 40px;
-    color: #383339;
+    color: #191919;
     font-family: 'futura-pt';
 }
 
@@ -896,9 +896,11 @@ i.icon-border-v3.g-icon-hover-1 span {
 .v-tab-content {
     background: #191919;
     position: relative;
-    color: #89848a;
+    color: #d8d8d8;
     padding: 80px 0 50px;
 }
+
+.v-tab-content .subh {font-size: 19px; font-family: pt sans caption;}
 
 .v-tab-content:after {
     top: 0;
@@ -932,14 +934,16 @@ i.icon-border-v3.g-icon-hover-1 span {
 }
 
 .v-tab-content .nav-tabs > li {
-    margin-bottom: 10px;
-    border-bottom: 1px dotted rgba(255, 225, 0, 0.26);
-    border-top: 1px dotted rgba(255, 225, 0, 0.26);
+    margin-bottom: 20px;
+    border-bottom: 2px dotted #ffe100;
+    border-top: 2px dotted #ffe100;
 }
 
 .v-tab-content .nav-tabs a {
     border: none;
     margin: 0;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .v-tab-content .nav-tabs a:hover {
@@ -954,7 +958,25 @@ i.icon-border-v3.g-icon-hover-1 span {
     color: black;
     font-family: pt sans caption;
     border: none;
+    font-weight: 700;
 }
+
+.v-tab-content .nav-tabs > li.active {
+        border-bottom: 2px dotted rgba(255, 225, 0, 0);
+    border-top: 2px dotted rgba(255, 225, 0, 0);
+    
+}
+
+.v-tab-content .nav-tabs > li.active:after {  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  
+  border-right:8px solid #191919; 
+content: ' ';
+position: absolute;
+top:0;
+right: 0;}
 
 .v-tab-content .g-display-td {
     padding-right: 15px;
@@ -2080,7 +2102,7 @@ i.icon-border-v3.g-icon-hover-1 span {
     background: #FFE100;
 }
 
-.blt { color: black}
+.blt { color: #1b1b1b; font-size: 17px;}
 
 
 /* --------------------------------------------------
@@ -2095,3 +2117,7 @@ a.conta:hover {background: #212121; text-decoration: none; transition: all 0.5s 
 .conta:hover .sconta {color: #FFE100 !important;}
 
 body {height: 100%}
+
+.ptab {color: #ffe100;font-size: 15px;}
+
+.ynum {padding-right: 0; width: 50px;}

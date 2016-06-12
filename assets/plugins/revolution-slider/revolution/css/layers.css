@@ -2546,11 +2546,12 @@ website:   	http://www.themepunch.com
     border-style: none;
     border-width: 0px;
     border-radius: 0 0 0 0px;
-    text-align: left
+    text-align: left;
+    font-family: futura-pt;
 }
 .tp-caption.BigBold-SubTitle,
 .BigBold-SubTitle {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.90);
     font-size: 15px;
     line-height: 24px;
     font-weight: 500;
@@ -2564,7 +2565,8 @@ website:   	http://www.themepunch.com
     border-width: 0px;
     border-radius: 0 0 0 0px;
     text-align: left;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    font-family: "pt sans caption";
 }
 .tp-caption.BigBold-Button,
 .BigBold-Button {
@@ -2582,7 +2584,9 @@ website:   	http://www.themepunch.com
     border-width: 1px;
     border-radius: 0px 0px 0px 0px;
     text-align: left;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    font-family: "pt sans caption";
+        
 }
 .tp-caption.BigBold-Button:hover,
 .BigBold-Button:hover {

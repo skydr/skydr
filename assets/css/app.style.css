@@ -9,12 +9,12 @@ body {
 p,
 li,
 li a {
-  color: #999;
+  color: #545454;
     font-family: pt sans caption;
 }
 
 a {
-  color: #4fd2c2;
+  color: #887800;
   text-decoration: none;
 }
 a,
@@ -27,14 +27,14 @@ a:focus {
   text-decoration: none;
 }
 a:hover {
-  color: #4fd2c2;
+  color: #5d5200;
   text-decoration: underline;
 }
 
 /* Default highlight color */
 ::-moz-selection {
-  color: #fff;
-  background: #4fd2c2;
+  color: #FFE100;
+  background: black;
 }
 ::selection {
   color: #FFE100;
