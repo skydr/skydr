@@ -1,11 +1,11 @@
 var w = c1.width = window.innerWidth,
   h = c1.height = window.innerHeight,
-  ctx = c1.getContext('2d'),
+  ctx1 = c1.getContext('2d'),
 
   opts = {
 
-    len: 50,
-    count: 150,
+    len: 100,
+    count: 250,
     baseTime: 20,
     addedTime: 10,
     dieChance: .01,
@@ -17,9 +17,9 @@ var w = c1.width = window.innerWidth,
     color: 'hsl(20,100%,light%)',
     baseLight: 50,
     addedLight: 15, // [50-10,50+10]
-    shadowToTimePropMult: 6,
-    baseLightInputMultiplier: .01,
-    addedLightInputMultiplier: .02,
+    shadowToTimePropMult: 7,
+    baseLightInputMultiplier: .1,
+    addedLightInputMultiplier: .12,
 
     cx: w / 1.3,
     cy: h / 3,
@@ -32,10 +32,10 @@ var w = c1.width = window.innerWidth,
   dieX = w / 0.1 / opts.len,
   dieY = h / 2 / opts.len,
 
-  baseRad = Math.PI * 2 / 6;
+  baseRad = Math.PI * 3 / 9;
 
-ctx.fillStyle = 'black';
-ctx.fillRect(0, 0, w, h);
+ctx1.fillStyle = 'black';
+ctx1.fillRect(1, 1, w, h);
 
 function loop() {
 
@@ -43,11 +43,11 @@ function loop() {
 
   ++tick;
 
-  ctx.globalCompositeOperation = 'source-over';
-  ctx.shadowBlur = 0;
-  ctx.fillStyle = 'rgba(0,0,0,alp)'.replace('alp', opts.repaintAlpha);
-  ctx.fillRect(0, 0, w, h);
-  ctx.globalCompositeOperation = 'lighter';
+  ctx1.globalCompositeOperation = 'source-over';
+  ctx1.shadowBlur = 0;
+  ctx1.fillStyle = 'rgba(0,0,0,alp)'.replace('alp', opts.repaintAlpha);
+  ctx1.fillRect(1, 0, w, h);
+  ctx1.globalCompositeOperation = 'lighter';
 
   if (lines.length < opts.count && Math.random() < opts.spawnChance)
     lines.push(new Line);
@@ -85,7 +85,7 @@ Line.prototype.beginPhase = function() {
   this.time = 0;
   this.targetTime = (opts.baseTime + opts.addedTime * Math.random()) | 0;
 
-  this.rad += baseRad * (Math.random() < .5 ? 1 : -1);
+  this.rad += baseRad * (Math.random() < .7 ? 1 : -1);
   this.addedX = Math.cos(this.rad);
   this.addedY = Math.sin(this.rad);
 
@@ -105,12 +105,12 @@ Line.prototype.step = function() {
     x = this.addedX * wave,
     y = this.addedY * wave;
 
-  ctx.shadowBlur = prop * opts.shadowToTimePropMult;
-  ctx.fillStyle = ctx.shadowColor = this.color.replace('light', opts.baseLight + opts.addedLight * Math.sin(this.cumulativeTime * this.lightInputMultiplier));
-  ctx.fillRect(opts.cx + (this.x + x) * opts.len, opts.cy + (this.y + y) * opts.len, 2, 2);
+  ctx1.shadowBlur = prop * opts.shadowToTimePropMult;
+  ctx1.fillStyle = ctx1.shadowColor = this.color.replace('light', opts.baseLight + opts.addedLight * Math.sin(this.cumulativeTime * this.lightInputMultiplier));
+  ctx1.fillRect(opts.cx + (this.x + x) * opts.len, opts.cy + (this.y + y) * opts.len, 3, 3);
 
   if (Math.random() < opts.sparkChance)
-    ctx.fillRect(opts.cx + (this.x + x) * opts.len + Math.random() * opts.sparkDist * (Math.random() < .5 ? 1 : -1) - opts.sparkSize / 2, opts.cy + (this.y + y) * opts.len + Math.random() * opts.sparkDist * (Math.random() < .5 ? 1 : -1) - opts.sparkSize / 2, opts.sparkSize, opts.sparkSize)
+    ctx1.fillRect(opts.cx + (this.x + x) * opts.len + Math.random() * opts.sparkDist * (Math.random() < .5 ? 1 : -1) - opts.sparkSize / 2, opts.cy + (this.y + y) * opts.len + Math.random() * opts.sparkDist * (Math.random() < .5 ? 1 : -1) - opts.sparkSize / 2, opts.sparkSize, opts.sparkSize)
 }
 loop();
 
@@ -118,8 +118,8 @@ window.addEventListener('resize', function() {
 
   w = c1.width = window.innerWidth;
   h = c1.height = window.innerHeight;
-  ctx.fillStyle = 'black';
-  ctx.fillRect(0, 0, w, h);
+  ctx1.fillStyle = 'black';
+  ctx1.fillRect(0, 0, w, h);
 
   opts.cx = w / 2;
   opts.cy = h / 2;
