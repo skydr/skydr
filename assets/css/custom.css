@@ -2121,3 +2121,48 @@ body {height: 100%}
 .ptab {color: #ffe100;font-size: 15px;}
 
 .ynum {padding-right: 0; width: 50px;}
+
+/* Contact form and its components */
+.contact .sky-form .form-control {
+	background: #f5f5f5;
+	border-radius: 2px;
+	max-width:870px;
+	border: none;
+}
+
+.contact .sky-form input.form-control {
+	height: 40px;
+}
+
+.contact .sky-form .form-control:focus {
+	box-shadow: none;
+}
+
+.contact .sky-form .btn-u {
+	width: 100%;
+	padding: 20px;
+	max-height: 55px;
+}
+
+/* Contact list and its components */
+.contact .contact-list ul {
+	padding-top: 3px;
+}
+.contact .contact-list ul li {
+	margin-bottom: 5px;
+}
+.contact .contact-list ul li .icon {
+	color: #9dba04;
+}
+
+.contact .contact-list ul li.first-item {
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #9797a2;
+	margin-bottom: 10px;
+}
+
+.contact .contact-list ul li.second-item {
+	color: #000;
+	font-weight: bold;
+}
