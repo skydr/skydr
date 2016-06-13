@@ -2166,3 +2166,6 @@ body {height: 100%}
 	color: #000;
 	font-weight: bold;
 }
+
+.btn-u-soc {background: #FFE100; color: black;}
+.btn-u-soc:hover {background: black; color: white;}
