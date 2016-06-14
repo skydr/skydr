@@ -6,3 +6,6 @@ paceOptions = {
   // not every request
   restartOnRequestAfter: false
 }
+Pace.on("done",function(){
+  $(window).trigger('resize');
+});
