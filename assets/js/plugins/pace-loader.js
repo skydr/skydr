@@ -7,5 +7,5 @@ paceOptions = {
   restartOnRequestAfter: false
 }
 Pace.on("done",function(){
-  $(window).trigger("resize");
+  $(window).trigger('resize');
 });
