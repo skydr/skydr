@@ -5674,7 +5674,8 @@
 	display: block;
 	font-size: 14px;
 	padding: 5px 15px;
-	background: #fefefe;
+	background: #2b2b2b;
+    color: white;
 }
 
 .acc-icon a.accordion-toggle i {

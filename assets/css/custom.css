@@ -1920,6 +1920,24 @@ right: 0;}
     }
 }
 
+li .img-c {max-height: 72px !important;}
+
+@media (min-width:992px) {
+    .second-cell .img-c {max-height: 120px !important;}
+    .second-cell {padding: 36px 10px !important}
+    .third-cell .img-c {max-height: 120px !important;}
+    .third-cell {padding: 36px 10px !important}
+    .fourth-cell .img-c {max-height: 120px !important;}
+    .fourth-cell {padding: 36px 10px !important}
+        .first-cell .img-c {max-height: 120px !important;}
+    .first-cell {padding: 36px 10px !important}
+        .fifth-cell .img-c {max-height: 120px !important;}
+    .fifth-cell {padding: 36px 10px !important}
+        .sixth-cell .img-c {max-height: 120px !important;}
+    .sixth-cell {padding: 36px 10px !important}
+        .last-cell .img-c {max-height: 120px !important;}
+    .last-cell {padding: 36px 10px !important}
+}
 
 /*Fifth owl carousel*/
 
@@ -2108,7 +2126,7 @@ right: 0;}
 /* --------------------------------------------------
 	[skydr custom]
 ----------------------------------------------------  */
-li .img-c {max-height: 72px !important;}
+
 
 a.conta {display: block; padding: 10px 0;}
 a.conta:hover {background: #212121; text-decoration: none; transition: all 0.5s ease-in-out;}

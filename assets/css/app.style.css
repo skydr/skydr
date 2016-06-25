@@ -888,7 +888,7 @@ a:hover {
 
 .accordion-toggle:before {
 	position: absolute;
-	content: "\f068";
+	content: "\f106";
 	font-family: FontAwesome;
 	top: 20px;
 	left: 20px;
@@ -900,7 +900,7 @@ a:hover {
 
 .accordion-toggle.collapsed:before {
 	position: absolute;
-	content: "\f067";
+	content: "\f107";
 	font-family: FontAwesome;
 	top: 20px;
 	left: 20px;
