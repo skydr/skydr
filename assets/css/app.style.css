@@ -890,8 +890,9 @@ a:hover {
 	position: absolute;
 	content: "\f106";
 	font-family: FontAwesome;
-	top: 20px;
-	left: 20px;
+	top: 40px;
+	left: 49%;
+    z-index: 2;
 }
 
 .accordion-toggle.collapsed {
@@ -902,8 +903,9 @@ a:hover {
 	position: absolute;
 	content: "\f107";
 	font-family: FontAwesome;
-	top: 20px;
-	left: 20px;
+	top: 40px;
+	left: 49%;
+    z-index: 2;
 }
 
 /* Responsive mode */

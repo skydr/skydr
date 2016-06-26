@@ -1937,8 +1937,8 @@ li .img-c {max-height: 72px !important;}
     .sixth-cell {padding: 36px 10px !important}
     .last-cell .img-c {max-height: 120px !important;}
     .last-cell {padding: 36px 10px !important}
-    .seventh-cell .img-c {max-height: 120px !important;}
-    .seventh-cell {padding: 36px 10px !important}
+    .seventh-cell .img-c {max-height: 60px !important;}
+    .seventh-cell {padding: 66px 10px !important}
 }
 
 /*Fifth owl carousel*/
@@ -2189,3 +2189,17 @@ body {height: 100%}
 
 .btn-u-soc {background: #FFE100; color: black;}
 .btn-u-soc:hover {background: black; color: white;}
+
+.acc-v1 .panel-heading a.triang {width: 0;
+height: 0;
+border-style: solid;
+    border-width: 45px 45px 0 45px;
+    border-color: #FFE100 transparent transparent transparent;
+    -webkit-transform:rotate(360deg);
+    margin: auto;
+    background: none;
+    padding: 0;
+    position: absolute;
+    left:45%;
+    z-index: 1;
+}
