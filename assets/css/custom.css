@@ -2045,7 +2045,7 @@ li .img-c {max-height: 72px !important;}
     margin: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .contact-blocks-v1 {
         margin-bottom: 30px;
         padding-bottom: 30px;
