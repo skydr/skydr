@@ -1,6 +1,8 @@
 /**/
 /* font */
 /**/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
 
 /**/
 /* defaults */
@@ -1008,7 +1010,6 @@
 /**/
 /* bootstrap compatibility */
 /**/
-/*
 .sky-form *,
 .sky-form *:after,
 .sky-form *:before {
@@ -1017,7 +1018,6 @@
 	box-sizing: content-box;
 	-moz-box-sizing: content-box;
 }
-*/
 .sky-form .label {
 	border-radius: 0;
 	font-size: 100%;
