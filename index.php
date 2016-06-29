@@ -876,60 +876,7 @@ $_SESSION['captcha_id'] = $str;
                     </div>
                 </div>
                 
-                <div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-                                <h4 id="myModalLabel1" class="modal-title">Напишите мне</h4>
-                            </div>
-                            <div class="modal-body">
-                                <h4>Всегда жду новых писем</h4>
-                                <p>Вопросы и консультации по проектам. Дополнительная информация по услугам. Так же пожелания и отзывы вы можете отправить по почте:</p><p>Базовая консультация 5000 р. Разработка базового ТЗ 15 000р.</p>
-                                <p>timonov.m.design@gmail.com</p>
-                               	<div class="row" style="margin-top:30px;">
-					
-						<div class="col-md-12">
-							<form action="#" method="post" id="sky-form3" class="sky-form contact-style">
-								<fieldset>
-									<div class="row">
-										<div class="col-md-6 col-md-offset-0">
-											<div class="margin-bottom-30">
-												<input type="text" name="name" id="name" class="form-control" placeholder="Name">
-											</div>
-
-											<div class="margin-bottom-30">
-												<input type="text" name="email" id="email" class="form-control" placeholder="Email *">
-											</div>
-										</div>
-
-										<div class="col-md-6 col-md-offset-0">
-											<div class="margin-bottom-30">
-												<textarea rows="4" name="message" id="message" class="form-control g-textarea-noresize" placeholder="Message"></textarea>
-											</div>
-											<p><button type="submit" class="btn-u btn-u-lg btn-u-upper rounded-2x">Отправить</button></p>
-										</div>
-									</div>
-								</fieldset>
-
-								<div class="message">
-									<i class="rounded-x fa fa-check"></i>
-									<p>Your message was successfully sent!</p>
-								</div>
-							</form>
-						</div>
-					</div>
-			
-		
-
-                            </div>
-                            <div class="modal-footer">
-                                
-                                     <button data-dismiss="modal" class="btn-u-cl" type="button">Закрыть</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+             
      
                 <div class="modal fade" id="social" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -1056,7 +1003,7 @@ $_SESSION['captcha_id'] = $str;
         <!-- End Copyright and Subscribe -->
     </section>
       <!-- newform -->
-           <form action="assets/plugins/sky-forms-pro/skyforms/demo-contacts-process.php" method="post" id="sky-form" class="sky-form sky-form-modal">
+           <form action="" method="post" id="sky-form" class="sky-form sky-form-modal">
 
 				<header>Contacts form</header>
 				
@@ -1066,14 +1013,14 @@ $_SESSION['captcha_id'] = $str;
 							<label class="label">Name</label>
 							<label class="input">
 								<i class="icon-append fa fa-user"></i>
-								<input type="text" name="name" id="name">
+								<input type="text" name="name" id="name" class="form-control" placeholder="Name">
 							</label>
 						</section>
 						<section class="col col-6">
 							<label class="label">E-mail</label>
 							<label class="input">
 								<i class="icon-append fa fa-envelope-o"></i>
-								<input type="email" name="email" id="email">
+								<input type="email" name="email" id="email" class="form-control" placeholder="Email *">
 							</label>
 						</section>
 					</div>
@@ -1090,7 +1037,7 @@ $_SESSION['captcha_id'] = $str;
 						<label class="label">Message</label>
 						<label class="textarea">
 							<i class="icon-append fa fa-comment"></i>
-							<textarea rows="4" name="message" id="message"></textarea>
+							<textarea rows="4" name="message" id="message" class="form-control g-textarea-noresize" placeholder="Message"></textarea>
 						</label>
 					</section>
 					
@@ -1117,83 +1064,7 @@ $_SESSION['captcha_id'] = $str;
 				</div>
 			
 		</form>
-                    <script type="text/javascript">
-			$(function()
-			{
-				// Validation
-				$("#sky-form").validate(
-				{					
-					// Rules for form validation
-					rules:
-					{
-						name:
-						{
-							required: true
-						},
-						email:
-						{
-							required: true,
-							email: true
-						},
-						message:
-						{
-							required: true,
-							minlength: 10
-						},
-						captcha:
-						{
-							required: true,
-							remote: 'assets/plugins/sky-forms-pro/skyforms/captcha/process.php'
-						}
-					},
-										
-					// Messages for form validation
-					messages:
-					{
-						name:
-						{
-							required: 'Please enter your name',
-						},
-						email:
-						{
-							required: 'Please enter your email address',
-							email: 'Please enter a VALID email address'
-						},
-						message:
-						{
-							required: 'Please enter your message'
-						},
-						captcha:
-						{
-							required: 'Please enter characters',
-							remote: 'Correct captcha is required'
-						}
-					},		
-                    
-                    // Ajax form submition					
-					submitHandler: function(form)
-					{
-						$(form).ajaxSubmit(
-						{
-							beforeSend: function()
-							{
-								$('#sky-form button[type="submit"]').attr('disabled', true);
-							},
-							success: function()
-							{
-								$("#sky-form").addClass('submited');
-							}
-						});
-					},
-					
-					// Do not change code below
-					errorPlacement: function(error, element)
-					{
-						error.insertAfter(element.parent());
-					}
-				});
-			});			
-		</script></div>
+                 
     <!-- JS Global Compulsory -->
     <script src="assets/plugins/jquery/jquery.min.js"></script>
     <script src="assets/plugins/jquery/jquery-migrate.min.js"></script>
@@ -1204,7 +1075,6 @@ $_SESSION['captcha_id'] = $str;
     <script src="assets/plugins/jquery.easing.min.js"></script>
 
     <script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
-    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery-ui.min.js"></script>
     <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
     <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
     <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.modal.js"></script>

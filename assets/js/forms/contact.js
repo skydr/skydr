@@ -60,11 +60,11 @@ var ContactForm = function () {
 	                {
 	                    beforeSend: function()
 	                    {
-	                        $('#sky-form3 button[type="submit"]').attr('disabled', true);
+	                        $('#sky-form button[type="submit"]').attr('disabled', true);
 	                    },
 	                    success: function()
 	                    {
-	                        $("#sky-form3").addClass('submited');
+	                        $("#sky-form").addClass('submited');
 	                    }
 	                });
 	            },
