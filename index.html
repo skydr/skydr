@@ -93,9 +93,10 @@
     <link rel="stylesheet" href="assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
     <link rel="stylesheet" href="assets/plugins/shhos/shhos.css">
     <link rel="stylesheet" href="assets/plugins/image-hover/css/img-hover.css">
-    <link rel="stylesheet" href="assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
     <link rel="apple-touch-icon" href="assets/img/webclip.png">
-
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" type="text/css"  href="assets/plugins/contact-modal/css/smart-forms.css">
+    <link rel="stylesheet" type="text/css"  href="assets/plugins/contact-modal/css/smart-addons.css">
 
     <link rel="stylesheet" type="text/css" href="assets/plugins/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
     <!-- Web Fonts -->
@@ -765,12 +766,78 @@
                     <h4 class="hconta">Блог</h4>
                     <span class="g-display-block g-color-white sconta">Скоро открытие</span></a>
                 </li>
-                <li class="col-md-3 col-sm-3 contact-blocks-v1">
-                    <a class="conta modal-opener" href="#sky-form">
+                <li class="col-md-3 col-sm-3 contact-blocks-v1 smartforms-px">
+                    <a class="conta" href="#" data-smart-modal="#contact-modal-form">
                     <i class="contact-blocks-v1__icon g-display-block g-color-primary icon-envelope iconta"></i>
                     <h4 class="hconta">Почта</h4>
                     <span class="g-display-block g-color-white sconta">timonov.m.design@gmail.com</span></a>
-                  
+                   <div id="contact-modal-form" class="smartforms-modal" role="alert">
+            <div class="smartforms-modal-container">
+            
+                <div class="smartforms-modal-header">
+                    <h3>Contact Form</h3>
+                    <a href="#" class="smartforms-modal-close">&times;</a>            
+                </div><!-- .smartforms-modal-header -->
+                
+                <div class="smartforms-modal-body">
+                    <div class="smart-wrap">
+                        <div class="smart-forms smart-container wrap-full">
+                            <div class="form-body">
+                                <form method="post" action="php/smartprocess.php" id="smart-form">
+                                    <div class="section">
+                                        <label class="field prepend-icon">
+                                            <input type="text" name="sendername" id="sendername" class="gui-input" placeholder="Enter name">
+                                            <span class="field-icon"><i class="fa fa-user"></i></span>  
+                                        </label>
+                                    </div><!-- end section -->
+                                    
+                                    <div class="section">
+                                        <label class="field prepend-icon">
+                                            <input type="email" name="emailaddress" id="emailaddress" class="gui-input" placeholder="Email address">
+                                            <span class="field-icon"><i class="fa fa-envelope"></i></span>
+                                        </label>
+                                    </div><!-- end section -->
+                                    
+                                    <div class="section">
+                                        <label class="field prepend-icon">
+                                            <input type="text" name="sendersubject" id="sendersubject" class="gui-input" placeholder="Enter subjec">
+                                            <span class="field-icon"><i class="fa fa-lightbulb-o"></i></span>
+                                        </label>
+                                    </div><!-- end section -->
+                                    
+                                    <div class="section">
+                                        <label class="field prepend-icon">
+                                            <textarea class="gui-textarea" id="sendermessage" name="sendermessage" placeholder="Enter message"></textarea>
+                                            <span class="field-icon"><i class="fa fa-comments"></i></span>
+                                            <span class="input-hint"> <strong>Hint:</strong> Please enter between 80 - 300 characters.</span>   
+                                        </label>
+                                    </div><!-- end section -->
+                                    
+                                    <div class="section">
+                                        <div class="smart-widget sm-left sml-120">
+                                            <label class="field">
+                                                <input type="text" name="captcha" id="captcha" class="gui-input sfcode" maxlength="6" placeholder="Enter CAPTCHA">
+                                            </label>
+                                            <label class="button captcode">
+                                                <img src="php/captcha/captcha.php?<?php echo time();?>" id="captchax" alt="captcha">
+                                                <span class="refresh-captcha"><i class="fa fa-refresh"></i></span>
+                                            </label>
+                                        </div><!-- end .smart-widget section --> 
+                                    </div><!-- end section -->
+                                    
+                                   <div class="result spacer-b10"></div><!-- end .result  section -->
+                       
+                                    <div class="smartforms-modal-footer">
+                                        <button type="submit" data-btntext-sending="Sending..." class="button btn-primary"> Submit Form </button>
+                                        <button type="reset" class="button"> Cancel </button>
+                                    </div><!-- end .form-footer section -->                                                          
+                                </form>                                                                                   
+                            </div><!-- end .form-body section -->
+                        </div><!-- end .smart-forms section -->
+                    </div><!-- end .smart-wrap section -->            
+                </div><!-- .smartforms-modal-body -->
+            </div><!-- .smartforms-modal-container -->
+        </div>
              
                     
                 </li>
@@ -982,67 +1049,6 @@
         <!-- End Copyright and Subscribe -->
     </section>
       <!-- newform -->
-           <form action="" method="post" id="sky-form" class="sky-form sky-form-modal">
-
-				<header>Contacts form</header>
-				
-				<fieldset>					
-					<div class="row">
-						<section class="col col-6">
-							<label class="label">Name</label>
-							<label class="input">
-								<i class="icon-append fa fa-user"></i>
-								<input type="text" name="name" id="name" class="form-control" placeholder="Name">
-							</label>
-						</section>
-						<section class="col col-6">
-							<label class="label">E-mail</label>
-							<label class="input">
-								<i class="icon-append fa fa-envelope-o"></i>
-								<input type="email" name="email" id="email" class="form-control" placeholder="Email *">
-							</label>
-						</section>
-					</div>
-					
-					<section>
-						<label class="label">Subject</label>
-						<label class="input">
-							<i class="icon-append fa fa-tag"></i>
-							<input type="text" name="subject" id="subject">
-						</label>
-					</section>
-					
-					<section>
-						<label class="label">Message</label>
-						<label class="textarea">
-							<i class="icon-append fa fa-comment"></i>
-							<textarea rows="4" name="message" id="message" class="form-control g-textarea-noresize" placeholder="Message"></textarea>
-						</label>
-					</section>
-					
-					<section>
-						<label class="label">Enter characters below:</label>
-						<label class="input input-captcha">
-							<img src="assets/plugins/sky-forms-pro/skyforms/captcha/image.php?<?php echo time(); ?>" width="100" height="35" alt="Captcha image" />
-							<input type="text" maxlength="6" name="captcha" id="captcha">
-						</label>
-					</section>
-					
-					<section>
-						<label class="checkbox"><input type="checkbox" name="copy"><i></i>Send a copy to my e-mail address</label>
-					</section>
-				</fieldset>
-				
-				<footer>
-					<button type="submit" class="button">Send message</button>
-				</footer>
-				
-				<div class="message">
-					<i class="fa fa-check"></i>
-					<p>Your message was successfully sent!</p>
-				</div>
-			
-		</form>
                  
     <!-- JS Global Compulsory -->
     <script src="assets/plugins/jquery/jquery.min.js"></script>
@@ -1054,9 +1060,6 @@
     <script src="assets/plugins/jquery.easing.min.js"></script>
 
     <script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
-    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
-    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
-    <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.modal.js"></script>
     <script src="assets/plugins/modernizr.js"></script>
     <script src="assets/plugins/shhos/shhos.js"></script>
     <script src="assets/plugins/wow/wow-ini-themes.js"></script>
@@ -1083,28 +1086,29 @@
 
     <!-- JS Page Level-->
     <script src="assets/js/one.app.js"></script>
-
     <script src="assets/js/spark.js"></script>
     <script src="assets/js/neir.js"></script>
     <script src="assets/js/plugins/owl-carousel2.js"></script>
     <script src="assets/js/plugins/circles-master.js"></script>
     <script src="assets/js/plugins/promo.js"></script>
-    <script src="assets/js/forms/contact.js"></script>
     <script src="assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-     <script type="text/javascript" src="assets/plugins/cube-portfolio/mosaic/js/main.js"></script>
+    <script type="text/javascript" src="assets/plugins/cube-portfolio/mosaic/js/main.js"></script>
     <script src="assets/js/plugins/cube-portfolio-lightbox.js"></script>
+        <!-- JS Page Level-->
+    <script type="text/javascript" src="js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/additional-methods.min.js"></script>
+    <script type="text/javascript" src="js/smartforms-modal.min.js"></script>
+    <script type="text/javascript" src="js/smart-form.js"></script> 
     <script>
         $(function () {
             App.init();
             OwlCarousel.initOwlCarousel();
-            ContactForm.initContactForm();
             CirclesMaster.initCirclesMaster();
             new WOW().init();
         });
     </script>
-    <!--[if lt IE 10]>
-	  <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
-	<![endif]-->
+ 
 </body>
 
 </html>
