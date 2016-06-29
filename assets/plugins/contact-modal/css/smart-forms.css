@@ -423,7 +423,7 @@ html, body{
 .smart-forms .gui-input:hover ~ .input-hint,
 .smart-forms .file .gui-file:hover + .gui-input,
 .smart-forms .gui-textarea:hover ~ .input-hint{
-	border-color: #62D0BA;
+	border-color: #FFE100;
 	background:#333;
 }
 
@@ -686,10 +686,10 @@ html, body{
 
 /* @primary button theme
 -------------------------------------------- */
-.smart-forms .btn-primary {  background-color: #1abc9c;  }
+.smart-forms .btn-primary {  background-color: #d6bd03;  }
 .smart-forms .btn-primary:hover,
-.smart-forms .btn-primary:focus { background-color: #48c9b0; }
-.smart-forms .btn-primary:active{ background-color: #16a085; }
+.smart-forms .btn-primary:focus { background-color: #908001; }
+.smart-forms .btn-primary:active{ background-color: #7b6d00; }
 .smart-forms .btn-primary, 
 .smart-forms .btn-primary:hover,
 .smart-forms .btn-primary:focus, 
@@ -2101,8 +2101,8 @@ html, body{
 }
 .smart-forms .refresh-captcha{ 
 	position:absolute;
-	background:#1abc9c;
-	border:3px solid #16a085;
+	background:#ffe100;
+	border:3px solid #908001;
 	-webkit-border-radius:30px;
 	-moz-border-radius:30px;
 	-o-border-radius:30px;
@@ -2118,7 +2118,7 @@ html, body{
 	text-align:center; 
 	line-height:26px;
 	font-size:17px; 
-	color:#fff;
+	color:#383838;
 	left:24%;
 }
 

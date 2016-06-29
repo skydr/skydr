@@ -2097,8 +2097,8 @@ li .img-c {max-height: 72px !important;}
 
 .social-block-v1__list-btn:hover,
 .social-block-v1__list:nth-child(2n+1) .social-block-v1__list-btn:hover {
-    color: #fff;
-    background: #F0B800;
+    color: #e6e6e6;
+    background: #232323;
     margin-top: 0;
     padding: 24px 0;
 }

@@ -769,7 +769,7 @@ background-image: url(data:image/gif;base64,R0lGODlhFAAUAPcAAAAAAJmZmZ2dnZ6enqKi
   text-align: center;
   color: #FFF;
   font-size: 16px;
-  ffont-weight:300;
+  font-weight:300;
   text-transform: uppercase;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -784,7 +784,7 @@ background-image: url(data:image/gif;base64,R0lGODlhFAAUAPcAAAAAAJmZmZ2dnZ6enqKi
 .smartforms-modal-header{
 	position:relative;
 	padding:15px 20px;
-	background-color:#1ABC9C;
+	background-color:#FFE100;
 	color:#fff;
 }
 
@@ -853,7 +853,7 @@ background-image: url(data:image/gif;base64,R0lGODlhFAAUAPcAAAAAAJmZmZ2dnZ6enqKi
 	width: 60px;
 	height: 100%;
 	line-height: 60px;
-	background:#1ABC9C;
+	background:#d6bd03;
 	opacity: 1;
 	filter: alpha(opacity=100);	
 	font-family: Arial, Baskerville, monospace;    
